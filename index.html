@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Tierney</title>
+</head>
+<style>
+    .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            background-color: lightseagreen ;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            padding: 0 20px;
+          }
+          
+          /* Define styles for the logo */
+          .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+          }
+          
+          /* Define styles for the navigation links */
+          .nav-link {
+            margin-right: 20px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+          }
+          
+          /* Add hover effects to the navigation links */
+          .nav-link:hover {
+            color: #007bff;
+          }
+          .dropdown {
+             display: inline-block;
+             position: relative;
+                }
+    .dropdown-content {
+     display: none;
+     position: absolute;
+     width: 100%;
+     overflow: auto;
+     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+     /* I thought this was a cool new concept */
+     background-color: powderblue;
+        }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: lightgreen;
+  background-color: #b70eeb;
+}
+button{
+    background-color: lightgreen;
+    border-radius: 40%;
+    border: #b70eeb;
+    border-width: 2cm;
+
+
+}
+          
+h1{font-family: 'Times New Roman', Times, serif;color: aqua; text-align: center;}
+h3{font-family: cursive ;color: blueviolet;text-align: center;}
+h2{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: crimson; text-align: left;}
+p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: darkgreen;font-size: 1.2em;}
+p{text-indent: 30px;}
+body{background-color: rgb(255, 178, 152);margin-left: 120px;margin-right: 120px;}
+a{text-decoration: none;}
+img{float: left;margin: 20px; size: 30px;}
+</style>
+<body>
+    <div class="toolbar">
+        <a class="logo" href="#">Tierney!</a>
+        <nav>
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About Me!</a>
+          <a class="nav-link" href="#">My Interests</a>
+          <a class="nav-link" href="#">Contact Information</a>
+          <a class="nav-link" href="#">Assignments</a>
+        </nav>
+        <div class="dropdown">
+            <button>Homework2</button>
+            <div class="dropdown-content">
+            <a href="hw2-1.html">HW2-1</a>
+            <a href="hw2-2.html">HW2-2</a>
+            <a href="hw2-3.html">HW2-3</a>
+            <a href="hw2-4.html">HW2-4</a>
+            <!-- I learned this drop down from blog.hubspot -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <img src="tierney.JPG" alt="tierney" height="150px">
+        <p>Hi! My name is Tierney I am a second semester senior at Babson College! I am from Houston, Texas and I have two brothers.</p>
+        <p>I came to Babson College because I thought it was a really great school and I loved how small the classes were. I also wanted to see what fall was like in Boston!</p>
+    <h2>My Interests</h2>
+        <p>I a really interested in <a href="https://www.twproductions.org/?gclid=Cj0KCQiAofieBhDXARIsAHTTldo927U9pJ2-cjC2yOos7RQLvaYiA9h_-I8xOzbpUjrHLTG98CYKMu8aAvpMEALw_wcB">videography</a> and food photography. I love being active and biking and hiking. I also love to cook food from other countries. I also really like coffee!</p>
+        <img src="foodphotography.jpg" alt="food photography" height="100px">
+<hr>
+    <h3>Contact</h3>
+        <p>Tierney Gregory- Web Tech</p>
+        <p><a href="https://github.com/Tierneygregory/WebTech">Link to my GitHub</a></p>
+        <p>Email: <a href="mailto: tgregory1@babson.edu">tgregory1@babson.edu</a> </p>
+        <p>Phone: 832-763-1739</p>
+    <!-- <p>&#8224</p> new html concept and i learned it from googling it -->
+    <p>&#164</p>
+    <h2>Portfolio</h2>
+    <p><a href="sitemap.html">Hyperlink to sitemap.html</a></p>
+   
+</body>
+</html>
