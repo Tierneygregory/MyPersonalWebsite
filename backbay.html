@@ -29,6 +29,76 @@
     body {
       background-color: rgb(255, 226, 190);
     }
+    .grid {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-rows: 4, 1fr;
+        grid-template-columns: 35%, 65%;
+    }
+    .r1c1 {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r1c2 {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r2c1 {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 2;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r2c2 {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 2;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r3c1 {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 3;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r3c2 {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 3;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r4c1 {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 4;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r4c2 {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 4;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 </style>
 <body>
     <div class="toolbar">
@@ -40,22 +110,23 @@
         <a class="navlink" href="northend.html">North End</a>
         <a class="navlink" href="aboutme.html">About Me!</a>
       </div>
-      <div>
+     <div class="grid">
+      <div class="r1c1">
         <img src="images/jonquils.jpg" alt="jonquils">
       </div>
-      <div>Jonquils Cafe- If youre looking for the coolest pastries in town, this is it!! They make 3d printed desserts that are light and refreshing and have amazing flavors. The atmosphere is unique and aesthetic and their coffee is really overpriced but once in a while it is totally worth it! Each pastry is carefully constructed and makes days to make go try them out!</div>
-      <div>
+      <div class="r1c2">Jonquils Cafe- If youre looking for the coolest pastries in town, this is it!! They make 3d printed desserts that are light and refreshing and have amazing flavors. The atmosphere is unique and aesthetic and their coffee is really overpriced but once in a while it is totally worth it! Each pastry is carefully constructed and makes days to make go try them out!</div>
+      <div class="r2c1">
         <img src="images/cafesusu.jpeg" alt="">
       </div>
-      <div>Cafe Susu- Coffee shop speakeasy! It is difficult to find because you have to go into a suit store and walk down the stairs underground! They serve alcoholic beverages and fantastic coffee. They do not have a lot of food options because they are best know for their fun drinks flavors. Be warned! It is tiny inside! So plan accourdingly if it is too crowded of go at a slower time. Definitely worth it to check out while you walk down the famous Newbury Street. </div>
-      <div>
+      <div class="r2c2">Cafe Susu- Coffee shop speakeasy! It is difficult to find because you have to go into a suit store and walk down the stairs underground! They serve alcoholic beverages and fantastic coffee. They do not have a lot of food options because they are best know for their fun drinks flavors. Be warned! It is tiny inside! So plan accourdingly if it is too crowded of go at a slower time. Definitely worth it to check out while you walk down the famous Newbury Street. </div>
+      <div class="r3c1">
         <img src="images/bluebottle.jpg" alt="bluebottle">
       </div>
-      <div>Blue Bottle- Located convenient on Newbury Street and is a Boston and New Nork classic! They have outdoor seating but not much inside. They have amazing lattes which are rich and creamy if you like that style! If you go you must get their waffles, you will not regret it!</div>
-      <div>
+      <div class="r3c2">Blue Bottle- Located convenient on Newbury Street and is a Boston and New Nork classic! They have outdoor seating but not much inside. They have amazing lattes which are rich and creamy if you like that style! If you go you must get their waffles, you will not regret it!</div>
+      <div class="r4c1">
         <img src="images/greystone.jpg" alt="greystone">
       </div>
-      <div>Greystone- Personally I have not been to this coffee shop yet, however, I have heard so much about it and have been dying to check it out!! They have the cutest and most aesthetic vibe and giant tufted grey seats to take pictures in. Sorry I do not have more informtion on this cafe, but I will update it when I go!</div>
-      
+      <div class="r4c2">Greystone- Personally I have not been to this coffee shop yet, however, I have heard so much about it and have been dying to check it out!! They have the cutest and most aesthetic vibe and giant tufted grey seats to take pictures in. Sorry I do not have more informtion on this cafe, but I will update it when I go!</div>
+    </div>  
 </body>
 </html>

@@ -29,6 +29,61 @@
     body {
       background-color: rgb(255, 226, 190);
     }
+    .grid {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-rows: 3, 1fr;
+        grid-template-columns: 35%, 65%;
+        font-size: 18px;
+    }
+    .r1c1 {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r1c2 {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r2c1 {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 2;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r2c2 {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 2;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r3c1 {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 3;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .r3c2 {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 3;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 </style>
 <body>
     <div class="toolbar">
@@ -40,17 +95,19 @@
         <a class="navlink" href="northend.html">North End</a>
         <a class="navlink" href="aboutme.html">About Me!</a>
       </div>
-      <div>
+     <div class="grid"> 
+      <div class="r1c1">
         <img src="images/vester2.webp" alt="vester">
       </div>
-      <div>Vester Cafe- The newest, hippest, women-owned cafe in the Cambridge area! All the team members there are awesome and so friendly. They update their menu constantly so there is never a dull menu! They have fun unique drinks such as a Oreo Latte and Ube Lattes. The drinks are sweet and tasty and they are also a great place to go for food and sandwiches as well!</div>
-      <div>
+      <div class="r1c2">Vester Cafe- The newest, hippest, women-owned cafe in the Cambridge area! All the team members there are awesome and so friendly. They update their menu constantly so there is never a dull menu! They have fun unique drinks such as a Oreo Latte and Ube Lattes. The drinks are sweet and tasty and they are also a great place to go for food and sandwiches as well!</div>
+      <div class="r2c1">
         <img src="images/faro.jpg" alt="faro">
       </div>
-      <div>Faro Cafe- Brand new adroable and aesthetic cafe youre going to want to check out. If I were to design my home it would look like this!! Plants are everywhere and the seating if cozy. It can can get packed at random times because of the neighboring colleges and offices. A perfect place to stop and get some coffee and a croissant!</div>
-      <div>
+      <div class="r2c2">Faro Cafe- Brand new adroable and aesthetic cafe youre going to want to check out. If I were to design my home it would look like this!! Plants are everywhere and the seating if cozy. It can can get packed at random times because of the neighboring colleges and offices. A perfect place to stop and get some coffee and a croissant!</div>
+      <div class="r3c1">
         <img src="images/blacksheep.jpg" alt="blacksheep">
       </div>
-      <div>Black Sheep Bagel- This place is more of a food spot than a coffee shop but I included it anyway because their bagels are fantastic and their coffee is decent and hits the spot. It is located underground which gives a cool atmosphere and there are many plants hanging around. I would not go here to sit as there is not much space, so take your bagel to the park!</div>
-</body>
+      <div class="r3c2">Black Sheep Bagel- This place is more of a food spot than a coffee shop but I included it anyway because their bagels are fantastic and their coffee is decent and hits the spot. It is located underground which gives a cool atmosphere and there are many plants hanging around. I would not go here to sit as there is not much space, so take your bagel to the park!</div>
+    </div>
+    </body>
 </html>
