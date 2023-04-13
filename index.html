@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boston Coffee</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
-<style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boston Coffee</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <style>
     .toolbar {
       display: flex;
       justify-content: space-between;
@@ -34,10 +34,10 @@
       justify-content: center;
     }
     .homepagetxt {
-      position: absolute;
+      /* position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); */
       color: white;
       text-align: center;
       font-size: 3.1em;
@@ -45,12 +45,25 @@
       width: 60%;
       max-width: 900px;
     }
-    #imgandtext {
+
+    @media (max-width: 600px) {
+      .homepagetxt {
+        font-size: 2em;
+      }
+    }
+    .imgandtxt {
       display: flex;
-      position: relative;
+      /* position: relative; */
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      background-image: url("images/nathan-dumlao-6VhPY27jdps-unsplash.jpg");
+
+      background-size: cover;
     }
     body {
       background-color: rgb(255, 226, 190);
+      margin:0;
     }
     .home {
       width: 45px;
@@ -59,11 +72,10 @@
       text-decoration: none;
     }
     .links {
-      display: flex ;
+      display: flex;
       flex-direction: column;
-
     }
-    
+
     /* #background {
       width: 100%;
       left: 0;
@@ -83,42 +95,44 @@
       align-items: center;
       text-align: center;
     } */
-</style>
-<body>
-  <div class="toolbar">
-    <a class="navlink" href="index.html"><img class="home" src="images/homeicon.png" alt="home"></a>
-    <a class="navlink" href="downtown.html">Downtown</a>
-    <a class="navlink" href="backbay.html">Back Bay</a>
-    <a class="navlink" href="cambridge.html">Cambridge</a>
-    <a class="navlink" href="charlestown.html">Charlestown</a>
-    <a class="navlink" href="northend.html">North End</a>
-    <a class="navlink" href="aboutme.html">About Me!</a>
-  </div>
- <div class="imgandtxt">
-  <div >
-    <img class="background" src="images/nathan-dumlao-6VhPY27jdps-unsplash.jpg" alt="backgroundimage">
-  </div>
-  <div class="homepagetxt">
-    Explore Boston Through Coffee
-  </div>
-</div>
-<p>
-  Any of your favorites not listed? Suggest them here!
-</p>
-<form action="leave a comment">
-  <label for="suggestions"></label>
-  <textarea name="suggestion" id="sugestion" cols="40" rows="5">Leave a suggestion!</textarea>
-  <input type="submit" value="Submit">
-</form>
-<div class="links">
-  Site Map
-  <a href="aboutme.html">Contact Me!</a>
-  <a href="index.html"> Coffee Suggestions</a>
-  <a href="northend.html">North End Coffee</a>
-  <a href="downtown.html">Downtown Coffee</a>
-  <a href="charlestown.html">Charlestown Coffee</a>
-  <a href="cambridge.html">Cambridge Coffee</a>
-  <a href="backbay.html">Backbay Coffee</a>
-</div>
-</body>
+  </style>
+  <body>
+    <div class="toolbar">
+      <a class="navlink" href="index.html"
+        ><img class="home" src="images/homeicon.png" alt="home"
+      /></a>
+      <a class="navlink" href="downtown.html">Downtown</a>
+      <a class="navlink" href="backbay.html">Back Bay</a>
+      <a class="navlink" href="cambridge.html">Cambridge</a>
+      <a class="navlink" href="charlestown.html">Charlestown</a>
+      <a class="navlink" href="northend.html">North End</a>
+      <a class="navlink" href="aboutme.html">About Me!</a>
+    </div>
+    <div class="imgandtxt">
+      <!-- <img
+          class="background"
+          src="images/nathan-dumlao-6VhPY27jdps-unsplash.jpg"
+          alt="backgroundimage"
+        /> -->
+      <div class="homepagetxt">Explore Boston Through Coffee</div>
+    </div>
+    <p>Any of your favorites not listed? Suggest them here!</p>
+    <form action="leave a comment">
+      <label for="suggestions"></label>
+      <textarea name="suggestion" id="sugestion" cols="40" rows="5">
+Leave a suggestion!</textarea
+      >
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="links">
+      Site Map
+      <a href="aboutme.html">Contact Me!</a>
+      <a href="index.html"> Coffee Suggestions</a>
+      <a href="northend.html">North End Coffee</a>
+      <a href="downtown.html">Downtown Coffee</a>
+      <a href="charlestown.html">Charlestown Coffee</a>
+      <a href="cambridge.html">Cambridge Coffee</a>
+      <a href="backbay.html">Backbay Coffee</a>
+    </div>
+  </body>
 </html>

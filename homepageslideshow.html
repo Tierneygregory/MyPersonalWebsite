@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <img  src="images/jaho.webp" id="slideshow-img"/>
+
+    <script>
+        const imageEl = document.querySelector('#slideshow-img');
+        const slides = [
+            "images/jaho.webp",
+            "images/sipcafe.jpg",
+            "images/tradesman.jpg"
+        ];
+        let index = 0;
+
+        function changeSlide () {
+            if(index === slides.length) {
+                index=0;
+            }
+            console.log(`Current index= ${index}`);
+            const imageSrc = slides[index];
+            imageEl.src = imageSrc;
+            index++;
+            setTimeout(changeSlide, 2000);
+        }
+
+        document.addEventListener("DOMContentLoaded", function (){changeSlide();});
+
+    </script>
+</body>
+</html>
