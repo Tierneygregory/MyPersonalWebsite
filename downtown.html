@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Downtown Boston</title>
-</head>
-<style>
+  </head>
+  <style>
     .toolbar {
       display: flex;
       justify-content: space-between;
@@ -14,6 +14,9 @@
       align-items: center;
       background-color: rgb(57, 44, 29);
       height: 60px;
+    }
+    .home {
+      width: 45px;
     }
     .navlink {
       text-decoration: none;
@@ -24,110 +27,140 @@
       color: rgb(255, 245, 237);
     }
     img {
-        width: 300px;
+      width: 400px;
     }
     body {
       background-color: rgb(255, 226, 190);
+      margin: 0%;
     }
     .grid {
-        display: grid;
-        grid-template-columns: 2, 1fr;
-        grid-template-rows: 4, 1fr;
-        grid-template-columns: 35%, 65%;
+      display: grid;
+      grid-template-columns: 2, 1fr;
+      grid-template-rows: 4, 1fr;
+      grid-template-columns: 35%, 65%;
+      row-gap: 30px;
+      column-gap: 90px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 50px;
     }
     .r1c1 {
-        text-align: center;
-        grid-column: 1;
-        grid-row: 1;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 1;
+      grid-row: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r1c2 {
-        text-align: center;
-        grid-column: 2;
-        grid-row: 1;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 2;
+      grid-row: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r2c1 {
-        text-align: center;
-        grid-column: 1;
-        grid-row: 2;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 1;
+      grid-row: 2;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r2c2 {
-        text-align: center;
-        grid-column: 2;
-        grid-row: 2;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 2;
+      grid-row: 2;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r3c1 {
-        text-align: center;
-        grid-column: 1;
-        grid-row: 3;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 1;
+      grid-row: 3;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r3c2 {
-        text-align: center;
-        grid-column: 2;
-        grid-row: 3;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 2;
+      grid-row: 3;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r4c1 {
-        text-align: center;
-        grid-column: 1;
-        grid-row: 4;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 1;
+      grid-row: 4;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r4c2 {
-        text-align: center;
-        grid-column: 2;
-        grid-row: 4;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 2;
+      grid-row: 4;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
-
-</style>
-<body>
+  </style>
+  <body>
     <div class="toolbar">
-        <a class="navlink" href="index.html">Home</a>
-        <a class="navlink" href="downtown.html">Downtown</a>
-        <a class="navlink" href="backbay.html">Back Bay</a>
-        <a class="navlink" href="cambridge.html">Cambridge</a>
-        <a class="navlink" href="charlestown.html">Charlestown</a>
-        <a class="navlink" href="northend.html">North End</a>
-        <a class="navlink" href="aboutme.html">About Me!</a>
-      </div>
+      <a class="navlink" href="index.html"
+        ><img class="home" src="images/homeicon.png" alt="home"
+      /></a>
+      <a class="navlink" href="downtown.html">Downtown</a>
+      <a class="navlink" href="backbay.html">Back Bay</a>
+      <a class="navlink" href="cambridge.html">Cambridge</a>
+      <a class="navlink" href="charlestown.html">Charlestown</a>
+      <a class="navlink" href="northend.html">North End</a>
+      <a class="navlink" href="aboutme.html">About Me!</a>
+    </div>
     <div class="grid">
       <div class="r1c1">
-        <img src="images/ogawa.jpg" alt="ogawa">
+        <img src="images/ogawa.jpg" alt="ogawa" />
       </div>
-      <div class="r1c2">Ogawa Cafe - Best know for is specialty coffees and stunning latte art. It can get very busy on at certain time because it is so popular! Lattes are expensive but yummy!</div>
+      <div class="r1c2">
+        Ogawa Cafe - Best know for is specialty coffees and stunning latte art.
+        It can get very busy on at certain time because it is so popular! Lattes
+        are expensive but yummy!
+      </div>
       <div class="r2c1">
-        <img src="images/jaho.webp" alt="jaho">
+        <img src="images/jaho.webp" alt="jaho" />
       </div>
-      <div class="r2c2">Jaho Coffee Roasters- Located close to the Boston Commons and Emerson college! They roast their own coffee beans and they also have espresso martinis and wine! Their iced lattes are super fun because they use super crushed ice cubes almost giving a snow cone effect, if that makes sense. Over all great vibe and enough space to do work in! </div>
+      <div class="r2c2">
+        Jaho Coffee Roasters- Located close to the Boston Commons and Emerson
+        college! They roast their own coffee beans and they also have espresso
+        martinis and wine! Their iced lattes are super fun because they use
+        super crushed ice cubes almost giving a snow cone effect, if that makes
+        sense. Over all great vibe and enough space to do work in!
+      </div>
       <div class="r3c1">
-        <img src="images/sipcafe.jpg" alt="sipcafe">
+        <img src="images/sipcafe.jpg" alt="sipcafe" />
       </div>
-      <div class="r3c2">Sip Cafe- Adorable free standing coffeeshop that looks like a green house! There is so much natural light inside and there is a patio that is perfect for the summer time and warm weather! They make delicious coffee and server beers and wines as well! Something special about this cafe is that they have dominos to play!</div>
+      <div class="r3c2">
+        Sip Cafe- Adorable free standing coffeeshop that looks like a green
+        house! There is so much natural light inside and there is a patio that
+        is perfect for the summer time and warm weather! They make delicious
+        coffee and server beers and wines as well! Something special about this
+        cafe is that they have dominos to play!
+      </div>
       <div class="r4c1">
-        <img src="images/tradesman.jpg" alt="tradesman">
+        <img src="images/tradesman.jpg" alt="tradesman" />
       </div>
-      <div class="r4c2">Tradesman Lounge- If you are looking for a perfect place to work from home in, look no furthur! Tradesman has great wifi and numerous outlets to charge your devices. They are best know for their incredible atmosphere, and their fun and playful specialty croissants that are different every weekend! They also have a bar area to grab drinks with a friend, or coworker.</div>
-    </div> 
-</body>
+      <div class="r4c2">
+        Tradesman Lounge- If you are looking for a perfect place to work from
+        home in, look no furthur! Tradesman has great wifi and numerous outlets
+        to charge your devices. They are best know for their incredible
+        atmosphere, and their fun and playful specialty croissants that are
+        different every weekend! They also have a bar area to grab drinks with a
+        friend, or coworker.
+      </div>
+    </div>
+  </body>
 </html>

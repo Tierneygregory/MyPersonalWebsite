@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charlestown</title>
-</head>
-<style>
+  </head>
+  <style>
     .toolbar {
       display: flex;
       justify-content: space-between;
@@ -14,6 +14,9 @@
       align-items: center;
       background-color: rgb(57, 44, 29);
       height: 60px;
+    }
+    .home {
+      width: 45px;
     }
     .navlink {
       text-decoration: none;
@@ -24,70 +27,91 @@
       color: rgb(255, 245, 237);
     }
     img {
-        width: 300px;
+      width: 400px;
     }
     body {
       background-color: rgb(255, 226, 190);
+      margin: 0;
     }
     .grid {
-        display: grid;
-        grid-template-columns: 2, 1fr;
-        grid-template-rows: 2, 1fr;
-        grid-template-columns: 35%, 65%;
+      display: grid;
+      grid-template-columns: 2, 1fr;
+      grid-template-rows: 2, 1fr;
+      grid-template-columns: 35%, 65%;
+      row-gap: 30px;
+      column-gap: 90px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 50px;
     }
     .r1c1 {
-        text-align: center;
-        grid-column: 1;
-        grid-row: 1;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 1;
+      grid-row: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r1c2 {
-        text-align: center;
-        grid-column: 2;
-        grid-row: 1;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 2;
+      grid-row: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r2c1 {
-        text-align: center;
-        grid-column: 1;
-        grid-row: 2;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 1;
+      grid-row: 2;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
     .r2c2 {
-        text-align: center;
-        grid-column: 2;
-        grid-row: 2;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      text-align: center;
+      grid-column: 2;
+      grid-row: 2;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
-   
-</style>
-<body>
+  </style>
+  <body>
     <div class="toolbar">
-        <a class="navlink" href="index.html">Home</a>
-        <a class="navlink" href="downtown.html">Downtown</a>
-        <a class="navlink" href="backbay.html">Back Bay</a>
-        <a class="navlink" href="cambridge.html">Cambridge</a>
-        <a class="navlink" href="charlestown.html">Charlestown</a>
-        <a class="navlink" href="northend.html">North End</a>
-        <a class="navlink" href="aboutme.html">About Me!</a>
-      </div>
+      <a class="navlink" href="index.html"
+        ><img class="home" src="images/homeicon.png" alt="home"
+      /></a>
+      <a class="navlink" href="downtown.html">Downtown</a>
+      <a class="navlink" href="backbay.html">Back Bay</a>
+      <a class="navlink" href="cambridge.html">Cambridge</a>
+      <a class="navlink" href="charlestown.html">Charlestown</a>
+      <a class="navlink" href="northend.html">North End</a>
+      <a class="navlink" href="aboutme.html">About Me!</a>
+    </div>
     <div class="grid">
       <div class="r1c1">
-        <img src="images/charlestown.jpeg" alt="tradesmanct">
-    </div>
-    <div class="r1c2">Tradesman Charlestown- Yes! Tradesman has another location! This one is different however, because it gives off more of a restaurant feel. It has a coffee shop in the front and opens up into a full blown restaurant with one of the biggest bar I have ever seen. They are well known for their amazing pizza flavors and brunch! They make fresh homemade tiny donuts every weekend which are perfect for brunch! Also, make sure to order their espresso martini! It is like no other. This place is perfect to sit and do work and have a drink!</div>
-    <div class="r2c1">
-        <img src="images/Zumes.jpg" alt="zumes">
+        <img src="images/charlestown.jpeg" alt="tradesmanct" />
       </div>
-      <div class="r2c2">Zumes- Recently, I was on the hunt for dried rose petals and I ended up walking by Zumes and I thought it was the cutest cafe! It is small but not terribly crowded. Their coffee is perfect and their pastries are fun. There is not a lot of places to sit because of the size however.</div>
-    </div>    
-</body>
+      <div class="r1c2">
+        Tradesman Charlestown- Yes! Tradesman has another location! This one is
+        different however, because it gives off more of a restaurant feel. It
+        has a coffee shop in the front and opens up into a full blown restaurant
+        with one of the biggest bar I have ever seen. They are well known for
+        their amazing pizza flavors and brunch! They make fresh homemade tiny
+        donuts every weekend which are perfect for brunch! Also, make sure to
+        order their espresso martini! It is like no other. This place is perfect
+        to sit and do work and have a drink!
+      </div>
+      <div class="r2c1">
+        <img src="images/Zumes.jpg" alt="zumes" />
+      </div>
+      <div class="r2c2">
+        Zumes- Recently, I was on the hunt for dried rose petals and I ended up
+        walking by Zumes and I thought it was the cutest cafe! It is small but
+        not terribly crowded. Their coffee is perfect and their pastries are
+        fun. There is not a lot of places to sit because of the size however.
+      </div>
+    </div>
+  </body>
 </html>

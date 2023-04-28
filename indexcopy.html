@@ -116,9 +116,9 @@
       border-radius: 5px;
       cursor: pointer;
     }
-    .slideshow-img {
-      width: 100vw;
-    }
+    .slideshow-img{
+            width: 100vw;
+        }
 
     /* #background {
       width: 100%;
@@ -139,68 +139,6 @@
       align-items: center;
       text-align: center;
     } */
-    img {
-      width: 98.8vw;
-    }
-    #slideshow-container {
-      position: static;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
-      object-fit: cover;
-    }
-
-    #slideshow-container h1 {
-      font-size: 48px;
-      margin-bottom: 16px;
-    }
-
-    #slideshow-container p {
-      font-size: 24px;
-    }
-    .homepagetxt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: #fff;
-  text-align: center;
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
-}
-
-.homepagetxt h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.homepagetxt p {
-  font-size: 1.5rem;
-}
-.subtext {
-  font-size: 2em;
-}
-.fade-in {
-  opacity: 0;
-  animation: fade-in 2s ease-in forwards;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
   </style>
   <body>
     <div class="toolbar">
@@ -214,21 +152,13 @@
       <a class="navlink" href="northend.html">North End</a>
       <a class="navlink" href="aboutme.html">About Me!</a>
     </div>
-    <div><img src="images/jaho.webp" id="slideshow-img" /></div>
-    <!-- <div id="slideshow-container">
-      <h1>Explore Boston Through Coffee!</h1>
-      <p>A guide to all my favorite coffee shops and cafes in the Boston area</p>
-    </div> -->
-    <!-- <div class="imgandtxt"> -->
+    <div class="imgandtxt">
       <!-- <img
           class="background"
           src="images/nathan-dumlao-6VhPY27jdps-unsplash.jpg"
           alt="backgroundimage"
         /> -->
-      <div class="fade-in"><div class="homepagetxt">Explore Boston Through Coffee
-        <p class="subtext">A guide to all my favorite coffee shops and cafes in the Boston area</p>
-      </div></div>
-        
+      <div class="homepagetxt">Explore Boston Through Coffee</div>
     </div>
     <p>Any of your favorites not listed? Suggest them here!</p>
     <form action="leave a comment">
@@ -250,65 +180,52 @@ Leave a suggestion!</textarea
     </div>
     <div class="popup" id="popup">
       <p>Follow me on Instagram!</p>
-      <button
-        id="follow-button"
+      <button id="follow-button"
         onclick="window.open('https://www.instagram.com/coffeeshopgirlss/?hl=en', '_blank')"
       >
         Follow
       </button>
     </div>
-    <!-- <div><img src="images/jaho.webp" id="slideshow-img" /></div> -->
-
+    <div><img  src="images/jaho.webp" id="slideshow-img"/></div>
+    
     <script>
       // Show pop-up after 2 seconds
-      setTimeout(function () {
-        document.getElementById("popup").style.display = "block";
-      }, 2000);
+		setTimeout(function() {
+			document.getElementById("popup").style.display = "block";
+		}, 2000);
 
-      // Remove pop-up if user clicks outside of it
-      document.addEventListener("click", function (e) {
-        if (
-          e.target !== document.getElementById("popup") &&
-          !document.getElementById("popup").contains(e.target)
-        ) {
-          document.getElementById("popup").style.display = "none";
+		// Remove pop-up if user clicks outside of it
+		document.addEventListener("click", function(e) {
+			if (e.target !== document.getElementById("popup") && !document.getElementById("popup").contains(e.target)) {
+				document.getElementById("popup").style.display = "none";
+			}
+		});
+
+		// Remove pop-up if user clicks "Follow" button
+		document.getElementById("follow-button").addEventListener("click", function() {
+			document.getElementById("popup").style.display = "none";
+		});
+
+    const imageEl = document.querySelector('#slideshow-img');
+        const slides = [
+            "images/jaho.webp",
+            "images/sipcafe.jpg",
+            "images/tradesman.jpg"
+        ];
+        let index = 0;
+
+        function changeSlide () {
+            if(index === slides.length) {
+                index=0;
+            }
+            console.log(`Current index= ${index}`);
+            const imageSrc = slides[index];
+            imageEl.src = imageSrc;
+            index++;
+            setTimeout(changeSlide, 2000);
         }
-      });
 
-      // Remove pop-up if user clicks "Follow" button
-      document
-        .getElementById("follow-button")
-        .addEventListener("click", function () {
-          document.getElementById("popup").style.display = "none";
-        });
-
-      const imageEl = document.querySelector("#slideshow-img");
-      const slides = [
-        "images/jaho.webp",
-        "images/tradesman.jpg",
-        "images/vester2.webp",
-        "images/pressedcafe.jpg",
-        "images/jonquils.jpg",
-        "images/faro.jpg",
-        "images/cafesusu.jpeg",
-        "images/cafesusu.jpeg",
-      ];
-      let index = 0;
-
-      function changeSlide() {
-        if (index === slides.length) {
-          index = 0;
-        }
-        console.log(`Current index= ${index}`);
-        const imageSrc = slides[index];
-        imageEl.src = imageSrc;
-        index++;
-        setTimeout(changeSlide, 2000);
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        changeSlide();
-      });
+        document.addEventListener("DOMContentLoaded", function (){changeSlide();});
     </script>
   </body>
 </html>
